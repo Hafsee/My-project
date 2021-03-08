@@ -1,245 +1,257 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My web app</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Sansita:ital@1&display=swap" rel="stylesheet">
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"/>
+
     <link rel="stylesheet" href="./styles/app.css">
-</head>
 
-<body>
-   <div class="container">
-   <header class="header">
-      <h1>Kitchen Organizer</h1>
-      <div>
-      <button class="signup-button"><a href="Form/signup.html">Sign up</a></button>
-   </div>
-      <nav class="nav-links">
-         <ul class="nav-links">
-            <li><a href="index.html">All items</a></li>
-      
-            <li><a href="Beverage/bev-img">Beverage</a> </li>
-      
-            <li>
-              <a href="Dry-food-produce/dry-food-img">Dry foods</a>
-            </li>
-      
-            <li>
-               <a href="Fresh-produce/fresh-produce-img">Fresh items</a>
-            </li>
-      
-            <li>
-               <a href="Protein/protein-img">Animal Protein</a> 
-            </li>
-      
-            <li>
-              <a href="Toiletries/toiletries-img">Toiletries</a>
-            </li>
-         </ul>
-      </nav>
-   </div>
 
-</header>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+  <body>
 
-<div class="flex-container">
-   <ul class="items">
- 
-         <li>
-            <img src="Beverage/Tea.png" alt="">
-            <h3>Tea</h3>
-            <p>Six years and counting and still haven't tasted a better tea!</p>
-            <form method = "POST"  action=""></form>
-            <label for="name">Brand name:Tetley-tea</label>
-            <input type="text" name="tetley-tea" id="tetley-tea" value="2">
+    <div class="container-fluid">
+        <div class="row mt6">
+            <div class="col s12">
+                <header class="header">
+                    <h1>Kitchen Organizer</h1>
+                    <div>
+                    <button class="signup-button"><a href="Form/signup.html">Sign up</a></button>
+                 </div>
+                    <nav class="nav-links">
+                       <ul class="nav-links">
+                          <li><a href="index.html">All items</a></li>
+                    
+                          <li><a href="Beverage/bev-img">Beverage</a> </li>
+                    
+                          <li>
+                            <a href="Dry-food-produce/dry-food-img">Dry foods</a>
+                          </li>
+                    
+                          <li>
+                             <a href="Fresh-produce/fresh-produce-img">Fresh items</a>
+                          </li>
+                    
+                          <li>
+                             <a href="Protein/protein-img">Animal Protein</a> 
+                          </li>
+                    
+                          <li>
+                            <a href="Toiletries/toiletries-img">Toiletries</a>
+                          </li>
+                       </ul>
+                    </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col s12 m4 l3">
+                <img src="Beverage/Tea.png" alt="">
+                <p class="f1 tc">Tea</p>
+                <p>Six years and counting and still haven't tasted a better tea!</p>
+                <form method = "POST"  action=""></form>
+                <label for="name">Brand name:Tetley-tea</label>
+                <input type="number" name="tetley-tea" id="tetley-tea" value="2">
+            </div>
+
+            <div class="col s12 m4 l3">
+                <img src="Beverage/Coffee.png" alt="">
+                <h3>Coffee</h3>
+                <p>Coffee is Life!</p>
+                <form method = "POST"  action=""></form>
+                
+                   <label for="name">Brand name:Tim Hortons</label>
+                   <input type="text" name="Tim Hortons" id="Tim Hortons" value="2">
+            </div>
+
+            <div class="col s12 m4 l3">
+                <img src="Beverage/Milo.png" alt="">
+                <h3>Hot Chocolate</h3>
+                <p>A cup of hot chocolate every morning keeps us warm, my kids cant do without it!</p>
+                <form method = "POST"  action=""></form>
+                <label for="name">Brand name:Milo</label>
+                <input type="text" name="Milo" id="Milo" value="2">
+            </div>
+
+            <div class="col s12 m4 l3">
+                <img src="Beverage/Honey.png" alt="">
+                <h3>Honey</h3>
+                <p>A cup of hot chocolate every morning keeps us warm, my kids cant do without it!</p>
+                <form method = "POST"  action=""></form>
+                <label for="name">Brand name:No name</label>
+                <input type="text" name="Honey" id="Honey" value="2">
+            </div>
+
+            <div class="col s12 m4 l3">
+                <img src="Beverage/Cereal.png" alt="">
+                <h3>Cereal</h3>
+                <p>A cup of hot chocolate every morning keeps us warm, my kids cant do without it!</p>
+                <form method = "POST"  action=""></form>
+                <label for="name">Brand name:Kelloggs</label>
+                <input type="text" name="Cereal" id="Cereal" value="2">
+            </div>
+       
+
+            <div class="col s12 m4 l3">
+                <img src="Dry-food-produce/Rice.png" alt="">
+                <h3>Rice</h3>
+                <p>Rice is a staple Nigerian food, I'm yet to find a Nigerian home that hates rice!</p>
+                <p>Some famous recipes such as Jollof, Fried rice, Coconut rice can be found on Youtube.</p>
+                <form method = "POST"  action=""></form>
+                <label for="name">Brand name:No name</label>
+                <input type="text" name="rice" id="rice" value="2">
+            </div>         
+       
+            <div class="col s12 m4 l3">
+                <img src="Dry-food-produce/Spaghetti.png" alt="">
+                <h3>Spaghetti (Capellinni) </h3>
+                <p>Mac & Cheese is our favorite recipe.</p>
+                <form method = "POST"  action=""></form>
+                <label for="name">Brand name:Unico</label>
+                <input type="text" name="Spaghetti" id="Unico" value="2">
+            </div>       
+               
+            <div class="col s12 m4 l3">
+                <img src="Dry-food-produce/Cous Cous.png" alt="">
+                <h3>Cous Cous</h3>
+                <p>It's an Arabian food made of wheat. Simple and easy to prepare</p>
+                <form method = "POST"  action=""></form>
+                <label for="name">Brand name:Zinda</label>
+                <input type="text" name="Cous Cous" id="Cous Cous" value="2">            
+            </div>
             
-         </li>
+            <div class="col s12 m4 l3">
+                <img src="Protein/Salmon.png" alt="">
+                <h3>Fish</h3>
+                <p>There are various kinds of fish we buy-Hake, Mackerel, Salmon are top on the list.</p>
+                <form method = "POST"  action=""></form>
+                <div>
+                   <label for="name">Salmon</label>
+                   <input type="text" name="Fish" id="Fish" value="2">
+            </div>            
 
-         <li>
-            <img src="Beverage/Coffee.png" alt="">
-            <h3>Coffee</h3>
-            <p>Coffee is Life!</p>
-            <form method = "POST"  action=""></form>
+            <div class="col s12 m4 l3">
+                <img src="Protein/Beef.png" alt="">
+                <h3>Beef</h3>
+                <p>There are various kinds of animal protein we buy - Sheep, Cow, Goat are top on the list.</p>
+                <form method = "POST"  action=""></form>
+                <div>
+                   <label for="name">Beef</label>
+                   <input type="text" name="Beef" id="Beef" value="2">                
+            </div>
+
+
+            <div class="col s12 m4 l3">
+                <img src="Protein/Mackerel.png" alt="">
+                <h3>Mackerel</h3>
+                <p>There are various kinds of animal protein we buy - Sheep, Cow, Goat are top on the list.</p>
+                <form method = "POST"  action=""></form>
+                <div>
+                   <label for="name">Mackerel</label>
+                   <input type="text" name="Mackerel" id="Mackerel" value="2">
+            </div>
+
+            <div class="col s12 m4 l3">
+                <img src="Protein/Chicken.png" alt="">
+                <h3>Chicken</h3>
+                <p>There are various kinds of animal protein we buy - Sheep, Cow, Goat are top on the list.</p>
+                <form method = "POST"  action=""></form>
+                <div>
+                   <label for="name">Brand name:PC Organics</label>
+                   <input type="text" name="Mackerel" id="Mackerel" value="2">
+            </div>
+
+            <div class="col s12 m4 l3">
+                <img src="Fresh-produce/Tomatoes 2.png" alt="">
+                <h3>Tomatoes</h3>
+                <p>There are various kinds of animal protein we buy - Sheep, Cow, Goat are top on the list.</p>
+                <form method = "POST"  action=""></form>
+                <div>
+                   <label for="name">Tomatoes</label>
+                   <input type="text" name="Tomatoes" id="Tomatoes" value="2">
+            </div>
             
-               <label for="name">Brand name:Tim Hortons</label>
-               <input type="text" name="Tim Hortons" id="Tim Hortons" value="2">
-            </li>
+            <div class="col s12 m4 l3">
+                <img src="Fresh-produce/Tomatoes 2.png" alt="">
+                <h3>Tomatoes</h3>
+                <p>There are various kinds of animal protein we buy - Sheep, Cow, Goat are top on the list.</p>
+                <form method = "POST"  action=""></form>
+                <div>
+                   <label for="name">Tomatoes</label>
+                   <input type="text" name="Tomatoes" id="Tomatoes" value="2">
+            </div>
 
-         <li>
-            <img src="Beverage/Milo.png" alt="">
-            <h3>Hot Chocolate</h3>
-            <p>A cup of hot chocolate every morning keeps us warm, my kids cant do without it!</p>
-            <form method = "POST"  action=""></form>
-            <label for="name">Brand name:Milo</label>
-            <input type="text" name="Milo" id="Milo" value="2">
-         </li>
+            <div class="col s12 m4 l3">
+                <img src="Fresh-produce/Onion.png" alt="">
+                <h3>Onion</h3>
+                <p>There are various kinds of animal protein we buy - Sheep, Cow, Goat are top on the list.</p>
+                <form method = "POST"  action=""></form>
+                <div>
+                   <label for="name">Onion</label>
+                   <input type="text" name="Onion" id="Onion" value="2">
+            </div>
 
-         <li>
-            <img src="Beverage/Honey.png" alt="">
-            <h3>Honey</h3>
-            <p>A cup of hot chocolate every morning keeps us warm, my kids cant do without it!</p>
-            <form method = "POST"  action=""></form>
-            <label for="name">Brand name:No name</label>
-            <input type="text" name="Honey" id="Honey" value="2">
-            
-         </li>
+            <div class="col s12 m4 l3">
+                img src="Fresh-produce/Potatoes.png" alt="">
+                <h3>Potatoes</h3>
+                <p>There are various kinds of animal protein we buy - Sheep, Cow, Goat are top on the list.</p>
+                <form method = "POST"  action=""></form>
+                <div>
+                   <label for="name">Brand name:PC Organics</label>
+                   <input type="text" name="Potatoes" id="Potatoes" value="2">
+                </div>
+            </div>
 
-         <li>
-            <img src="Beverage/Cereal.png" alt="">
-            <h3>Cereal</h3>
-            <p>A cup of hot chocolate every morning keeps us warm, my kids cant do without it!</p>
-            <form method = "POST"  action=""></form>
-            <label for="name">Brand name:Kelloggs</label>
-            <input type="text" name="Cereal" id="Cereal" value="2">
-         </li>
+            <div class="col s12 m4 l3">
+                <img src="Toiletries/Bath Bar soap.png" alt="">
+                <h3>Bath Soap</h3>
+                <p>There are various kinds of animal protein we buy - Sheep, Cow, Goat are top on the list.</p>
+                <form method = "POST"  action=""></form>
+                <div>
+                   <label for="name">Brand name:Olay</label>
+                   <input type="text" name="Toiletries" id="Bath Bar" value="2">
+            </div>
 
-      <li>
-         <img src="Dry-food-produce/Rice.png" alt="">
-         <h3>Rice</h3>
-         <p>Rice is a staple Nigerian food, I'm yet to find a Nigerian home that hates rice!</p>
-         <p>Some famous recipes such as Jollof, Fried rice, Coconut rice can be found on Youtube.</p>
-         <form method = "POST"  action=""></form>
-         <label for="name">Brand name:No name</label>
-         <input type="text" name="rice" id="rice" value="2">
-      </li>
+            <div class="col s12 m4 l3">
+                <img src="Toiletries/Tooth paste.png" alt="">
+                <h3>Toothpaste</h3>
+                <p>There are various kinds of animal protein we buy - Sheep, Cow, Goat are top on the list.</p>
+                <form method = "POST"  action=""></form>
+                <div>
+                   <label for="name">Brand name:Colgate</label>
+                   <input type="text" name="Toiletries" id="Colgate" value="2">
+            </div>
 
-      <li>
-         <img src="Dry-food-produce/Spaghetti.png" alt="">
-         <h3>Spaghetti (Capellinni) </h3>
-         <p>Mac & Cheese is our favorite recipe.</p>
-         <form method = "POST"  action=""></form>
-         <label for="name">Brand name:Unico</label>
-         <input type="text" name="Spaghetti" id="Unico" value="2">
-      </li>
+            <div class="col s12 m4 l3">
+                <img src="Fresh-produce/Tomatoes 2.png" alt="">
+                <h3>Tomatoes</h3>
+                <p>There are various kinds of animal protein we buy - Sheep, Cow, Goat are top on the list.</p>
+                <form method = "POST"  action=""></form>
+                <div>
+                   <label for="name">Tomatoes</label>
+                   <input type="text" name="Tomatoes" id="Tomatoes" value="2">
+            </div>
 
-      <li>
-         <img src="Dry-food-produce/Cous Cous.png" alt="">
-         <h3>Cous Cous</h3>
-         <p>It's an Arabian food made of wheat. Simple and easy to prepare</p>
-         <form method = "POST"  action=""></form>
-         <label for="name">Brand name:Zinda</label>
-         <input type="text" name="Cous Cous" id="Cous Cous" value="2">            
-      </li>
 
-      <li>
-         <img src="Protein/Salmon.png" alt="">
-         <h3>Fish</h3>
-         <p>There are various kinds of fish we buy-Hake, Mackerel, Salmon are top on the list.</p>
-         <form method = "POST"  action=""></form>
-         <div>
-            <label for="name">Salmon</label>
-            <input type="text" name="Fish" id="Fish" value="2">
-         </div>
+            <div class="container-fluid">
+                <div class="row mt6">
+                    <div class="col s12">
+                        <header class="header">
+                            <h1>Kitchen Organizer</h1>
 
-      </li>
+        </div>
 
-      <li>
-         <img src="Protein/Beef.png" alt="">
-         <h3>Beef</h3>
-         <p>There are various kinds of animal protein we buy - Sheep, Cow, Goat are top on the list.</p>
-         <form method = "POST"  action=""></form>
-         <div>
-            <label for="name">Beef</label>
-            <input type="text" name="Beef" id="Beef" value="2">
-         </div>
 
-      </li>
 
-      <li>
-         <img src="Protein/Mackerel.png" alt="">
-         <h3>Mackerel</h3>
-         <p>There are various kinds of animal protein we buy - Sheep, Cow, Goat are top on the list.</p>
-         <form method = "POST"  action=""></form>
-         <div>
-            <label for="name">Mackerel</label>
-            <input type="text" name="Mackerel" id="Mackerel" value="2">
-         </div>
 
-      </li>
-
-      <li>
-         <img src="Protein/Chicken.png" alt="">
-         <h3>Chicken</h3>
-         <p>There are various kinds of animal protein we buy - Sheep, Cow, Goat are top on the list.</p>
-         <form method = "POST"  action=""></form>
-         <div>
-            <label for="name">Brand name:PC Organics</label>
-            <input type="text" name="Mackerel" id="Mackerel" value="2">
-         </div>
-
-      </li>
-
-      <li>
-         <h2>Fresh-produce</h2>
-         <img src="Fresh-produce/Tomatoes 2.png" alt="">
-         <h3>Tomatoes</h3>
-         <p>There are various kinds of animal protein we buy - Sheep, Cow, Goat are top on the list.</p>
-         <form method = "POST"  action=""></form>
-         <div>
-            <label for="name">Tomatoes</label>
-            <input type="text" name="Tomatoes" id="Tomatoes" value="2">
-         </div>
-
-      </li>
-
-      <li>
-         <img src="Fresh-produce/Onion.png" alt="">
-         <h3>Onion</h3>
-         <p>There are various kinds of animal protein we buy - Sheep, Cow, Goat are top on the list.</p>
-         <form method = "POST"  action=""></form>
-         <div>
-            <label for="name">Onion</label>
-            <input type="text" name="Onion" id="Onion" value="2">
-         </div>
-
-      </li>
-
-      <li>
-         <img src="Fresh-produce/Potatoes.png" alt="">
-         <h3>Potatoes</h3>
-         <p>There are various kinds of animal protein we buy - Sheep, Cow, Goat are top on the list.</p>
-         <form method = "POST"  action=""></form>
-         <div>
-            <label for="name">Brand name:PC Organics</label>
-            <input type="text" name="Potatoes" id="Potatoes" value="2">
-         </div>
-
-      </li>
-   
-      <li>
-         <h2>Toiletries</h2>
-         <img src="Toiletries/Bath Bar soap.png" alt="">
-         <h3>Bath Soap</h3>
-         <p>There are various kinds of animal protein we buy - Sheep, Cow, Goat are top on the list.</p>
-         <form method = "POST"  action=""></form>
-         <div>
-            <label for="name">Brand name:Olay</label>
-            <input type="text" name="Toiletries" id="Bath Bar" value="2">
-         </div>
-      </li>
-  
-      <li>
-         <img src="Toiletries/Tooth paste.png" alt="">
-         <h3>Toothpaste</h3>
-         <p>There are various kinds of animal protein we buy - Sheep, Cow, Goat are top on the list.</p>
-         <form method = "POST"  action=""></form>
-         <div>
-            <label for="name">Brand name:Colgate</label>
-            <input type="text" name="Toiletries" id="Colgate" value="2">
-         </div>
-      </li>
-   </ul>   
-</section>
-
-<footer class="footer">
-   <h2>Contact us</h2>
-   <ul>
-      <li><a href="mailto:haliluhafsat@gmail.com">Email</a></li>
-      <li><span class="tel">403-466-8599</span></li>
-   </ul>
-</footer>
-</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 </html>
