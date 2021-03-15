@@ -21,65 +21,87 @@
             <div class="col s12">
                 <header class="header grey darken-2">
                     <h1>Kitchen Organizer</h1>
-                  
-                    <nav class="nav-links">
-                       <ul class="nav-links">
-                          <li><a href="index.html">All items</a></li>
-                    
-                          <li><a href="Beverage/bev-img">Beverage</a> </li>
-                    
-                          <li>
-                            <a href="Dry-food-produce/dry-food-img">Dry foods</a>
-                          </li>
-                    
-                          <li>
-                             <a href="Fresh-produce/fresh-produce-img">Fresh items</a>
-                          </li>
-                    
-                          <li>
-                             <a href="Protein/protein-img">Animal Protein</a> 
-                          </li>
-                    
-                          <li>
-                            <a href="Toiletries/toiletries-img">Toiletries</a>
-                          </li>
+                    <nav>
+                    <div class="nav-wrapper">
+                            <a href="#" data-target="mobile-nav" class="sidenav-trigger left"><i class="material-icons">menu</i></a>
 
-                            <div class="nav-wrapper">
-                              <form>
-                                <div class="input-field">
-                                  <input id="search" type="search" required>
-                                  <label class="label-icon" for="search"><i class="material-icons">search</i></label>
-                                  <i class="material-icons">close</i>
-                                </div>
-                              </form>
-                            </div>
+                            <ul class="hide-on-med-and-down">
+                                <li><a href="index.html">All items</a></li>
 
-                       </ul>
+                                <li><a href="Beverage/bev-img">Beverage</a> </li>
+
+                                <li>
+                                    <a href="Dry-food-produce/dry-food-img">Dry foods</a>
+                                </li>
+
+                                <li>
+                                    <a href="Fresh-produce/fresh-produce-img">Fresh items</a>
+                                </li>
+
+                                <li>
+                                    <a href="Protein/protein-img">Animal Protein</a>
+                                </li>
+
+                                <li>
+                                    <a href="Toiletries/toiletries-img">Toiletries</a>
+                                </li>
+
+                            </ul>
+                    </div>
                     </nav>
+
+                    <!--MOBILE MENU -->
+                    <ul class="sidenav" id="mobile-nav">
+                        <li><a href="index.html">All items</a></li>
+
+                        <li><a href="Beverage/bev-img">Beverage</a> </li>
+
+                        <li>
+                            <a href="Dry-food-produce/dry-food-img">Dry foods</a>
+                        </li>
+
+                        <li>
+                            <a href="Fresh-produce/fresh-produce-img">Fresh items</a>
+                        </li>
+
+                        <li>
+                            <a href="Protein/protein-img">Animal Protein</a>
+                        </li>
+
+                        <li>
+                            <a href="Toiletries/toiletries-img">Toiletries</a>
+                        </li>
+
+                    </ul>
+
             </div>
         </div>
     </div>
 
     <div class="container-fluid">
         <div class="row">
-            <div class="col s12 m4 l3">
+            <div class="col s12 m4 l3 tc item-height">
                 <img src="Beverage/Tea.png" height="200px" width="200px" alt="">
                 <p class="f3">Tea</p>
+                <p>Brand name:Tetley-tea</p>
                 <form method = "POST"  action=""></form>
-                <label for="name">Brand name:Tetley-tea</label>
-                <input type="number" name="tetley-tea" id="tetley-tea" value="2">
+                <div class="col s2 m3 l2 right">
+                    <label for="name">Quantity</label>
+                    <input type="number" name="tetley-tea" id="tetley-tea" value="2">
+                </div>
+
             </div>
 
-            <div class="col s12 m4 l3">
+            <div class="col s12 m4 l3 tc item-height">
                 <img src="Beverage/Coffee.png" height="200px" width="200px" alt="">
-                <p class="f3 tc">Coffee</p>
+                <p class="f3 mt3">Coffee</p>
                 
                 <form method = "POST"  action=""></form>
                 <label for="name">Brand name:Tim Hortons</label>
                 <input type="number" name="Tim Hortons" id="Tim Hortons" value="2">
                 </div>
 
-            <div class="col s12 m4 l3">
+            <div class="col s12 m4 l3 tc item-height">
                 <img src="Beverage/Milo.png" height="200px" width="200px" alt="">
                 <p class="f3 tc">Milo</p>
                 
@@ -88,7 +110,7 @@
                 <input type="number" name="Milo" id="Milo" value="2">
                 </div>
 
-            <div class="col s12 m4 l3">
+            <div class="col s12 m4 l3 tc item-height">
                 <img src="Beverage/Honey.png" height="200px" width="200px" alt="">
                 <p class="f3 tc">Honey</p>
                 
@@ -236,5 +258,11 @@
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          var elems = document.querySelectorAll('.sidenav');
+          M.Sidenav.init(elems);
+      });
+  </script>
 </body>
 </html>
