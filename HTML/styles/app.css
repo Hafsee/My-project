@@ -27,13 +27,6 @@ font-family: "Roboto", "sans-serif";
    align-self: center;
 }
 
-.nav-links{
-    display: flex;
-    flex-direction: row;
-    justify-content:space-evenly;
-    text-decoration:none;
-    align-items: center;
-}
 
 .nav-links li{
     width:100%;
@@ -57,4 +50,8 @@ p,
 ul{
     padding: 0;
     margin:0;
+}
+
+.item-height{
+    height: 400px;
 }
