@@ -10,6 +10,8 @@
 
     <link rel="stylesheet" href="./styles/app.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -19,61 +21,22 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col s12">
-                <header class="header grey darken-2">
+                <header class="header grey darken-2 tc">
                     <h1>Kitchen Organizer</h1>
-                    <nav>
-                    <div class="nav-wrapper">
-                            <a href="#" data-target="mobile-nav" class="sidenav-trigger left"><i class="material-icons">menu</i></a>
-
-                            <ul class="hide-on-med-and-down">
-                                <li><a href="index.html">All items</a></li>
-
-                                <li><a href="Beverage/bev-img">Beverage</a> </li>
-
-                                <li>
-                                    <a href="Dry-food-produce/dry-food-img">Dry foods</a>
-                                </li>
-
-                                <li>
-                                    <a href="Fresh-produce/fresh-produce-img">Fresh items</a>
-                                </li>
-
-                                <li>
-                                    <a href="Protein/protein-img">Animal Protein</a>
-                                </li>
-
-                                <li>
-                                    <a href="Toiletries/toiletries-img">Toiletries</a>
-                                </li>
-
-                            </ul>
-                    </div>
-                    </nav>
-
-                    <!--MOBILE MENU -->
-                    <ul class="sidenav" id="mobile-nav">
-                        <li><a href="index.html">All items</a></li>
-
-                        <li><a href="Beverage/bev-img">Beverage</a> </li>
-
-                        <li>
-                            <a href="Dry-food-produce/dry-food-img">Dry foods</a>
-                        </li>
-
-                        <li>
+                    <div> <button class="signup-button"><a href="Form/signup.html">Sign up</a></button></div>                  
+                        <div class="navbar">
+                            <a class="active" href="index.html">All items</a>
+                            <a href="Beverage/bev-img">Beverage</a>
+                            <a href="Dry-food-produce/dry-food-img">Dry Foods</a>
                             <a href="Fresh-produce/fresh-produce-img">Fresh items</a>
-                        </li>
-
-                        <li>
                             <a href="Protein/protein-img">Animal Protein</a>
-                        </li>
-
-                        <li>
-                            <a href="Toiletries/toiletries-img">Toiletries</a>
-                        </li>
-
-                    </ul>
-
+                            <a href="Protein/protein-img">Toiletries</a>
+                            <a class="fa fa-fw fa-search" href="Toiletries/toiletries-img">Search</a>
+                        
+                          </div>                    
+                        </nav>
+                    </div>
+                </header>
             </div>
         </div>
     </div>
@@ -81,170 +44,205 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col s12 m4 l3 tc item-height">
-                <img src="Beverage/Tea.png" height="200px" width="200px" alt="">
+                <img src="Beverage/Tea.png" alt="">
                 <p class="f3">Tea</p>
                 <p>Brand name:Tetley-tea</p>
                 <form method = "POST"  action=""></form>
-                <div class="col s2 m3 l2 right">
+                <div class="col s2 m3 l2">
                     <label for="name">Quantity</label>
                     <input type="number" name="tetley-tea" id="tetley-tea" value="2">
                 </div>
-
             </div>
 
             <div class="col s12 m4 l3 tc item-height">
                 <img src="Beverage/Coffee.png" height="200px" width="200px" alt="">
                 <p class="f3 mt3">Coffee</p>
-                
+                <p>Brand name:Tim Hortons</p></label>
                 <form method = "POST"  action=""></form>
-                <label for="name">Brand name:Tim Hortons</label>
-                <input type="number" name="Tim Hortons" id="Tim Hortons" value="2">
+                <div class="col s2 m3 l2">
+                    <label for="name">Quantity</label>
+                    <input type="number" name="Tim Hortons" id="Tim Hortons" value="2">
                 </div>
-
-            <div class="col s12 m4 l3 tc item-height">
-                <img src="Beverage/Milo.png" height="200px" width="200px" alt="">
-                <p class="f3 tc">Milo</p>
-                
-                <form method = "POST"  action=""></form>
-                <label for="name">Brand name:Milo</label>
-                <input type="number" name="Milo" id="Milo" value="2">
-                </div>
-
-            <div class="col s12 m4 l3 tc item-height">
-                <img src="Beverage/Honey.png" height="200px" width="200px" alt="">
-                <p class="f3 tc">Honey</p>
-                
-                <form method = "POST"  action=""></form>
-                <label for="name">Brand name:No name</label>
-                <input type="number" name="Honey" id="Honey" value="2">
             </div>
 
-            <div class="col s12 m4 l3">
-                <img src="Beverage/Cereal.png" height="200px" width="200px" alt="">
-                <p class="f3 tc">Cereal</p>
-                
+            <div class="col s12 m4 l3 tc item-height">
+                <img src="Beverage/Milo.png" alt="img-milo">
+                <p class="f3 mt3">Milo</p>
+                <p>Brand name:Milo</p>                
                 <form method = "POST"  action=""></form>
-                <label for="name">Brand name:Kelloggs</label>
-                <input type="number" name="Cereal" id="Cereal" value="2">
+                <div class="col s2 m3 l2">
+                    <label for="name">Quantity</label>
+                    <input type="number" name="Milo" id="Milo" value="2">
+                </div>                
+                
+                </div>
+
+            <div class="col s12 m4 l3 tc item-height">
+                <img src="Beverage/Honey.png"  alt="Honey-img">
+                <p class="f3 mt3">Honey</p>
+                <p>Brand name:No name</p>
+                <form method = "POST"  action=""></form>
+                <div class="col s2 m3 l2">
+                    <label for="name">Quantity</label>
+                    <input type="number" name="Honey" id="Honey" value="2">
+                </div>                
+            </div>
+
+            <div class="col s12 m4 l3 tc item-height">
+                <img src="Beverage/Cereal.png" alt="kellogs cereal">
+                <p class="f3 mt3">Cereal</p>
+                <p>Brand name:Kelloggs</p>
+                <form method = "POST"  action=""></form>
+                <div class="col s2 m3 l2">
+                    <label for="name">Quantity</label>
+                    <input type="number" name="Cereal" id="Cereal" value="2">
+                </div>                 
             </div>
        
-
-            <div class="col s12 m4 l3">
-                <img src="Dry-food-produce/Rice.png" height="200px" width="200px" alt="">
-                <p class="f3 tc">Rice</p>
-                
+            <div class="col s12 m4 l3 tc item-height">
+                <img src="Dry-food-produce/Rice.png" alt="img-rice">
+                <p class="f3 mt3">Rice</p>
+                <p>Brand name:No name</p>              
                 <form method = "POST"  action=""></form>
-                <label for="name">Brand name:No name</label>
-                <input type="number" name="rice" id="rice" value="2">
+                <div class="col s2 m3 l2">
+                    <label for="name">Quantity</label>
+                    <input type="number" name="rice" id="rice" value="2">
+                </div>                
             </div>         
        
-            <div class="col s12 m4 l3">
-                <img src="Dry-food-produce/Spaghetti.png" height="200px" width="200px" alt="">
-                <p class="f3 tc">Spaghetti</p>
-                
+            <div class="col s12 m4 l3 tc item-height">
+                <img src="Dry-food-produce/Spaghetti.png"  alt="img-spaghetti">
+                <p class="f3 mt3">Spaghetti</p>
+                <p>Brand name:Unico</p>               
                 <form method = "POST"  action=""></form>
-                <label for="name">Brand name:Unico</label>
-                <input type="text" name="Spaghetti" id="Unico" value="2">
+                <div class="col s2 m3 l2">
+                    <label for="name">Quantity</label>
+                    <input type="text" name="Spaghetti" id="Unico" value="2">
+                </div>    
             </div>       
                
-            <div class="col s12 m4 l3">
-                <img src="Dry-food-produce/Cous Cous.png" height="200px" width="200px" alt="">
-                <p class="f3 tc">Cous Cous</p>
-                
+            <div class="col s12 m4 l3 tc item-height">
+                <img src="Dry-food-produce/Cous Cous.png" alt="img-cous cous">
+                <p class="f3 mt3">Cous Cous</p>
+                <p>Brand name:Zinda</p>               
                 <form method = "POST"  action=""></form>
-                <label for="name">Brand name:Zinda</label>
-                <input type="number" name="Cous Cous" id="Cous Cous" value="2">            
+                <div class="col s2 m3 l2">
+                    <label for="name">Quantity</label>
+                    <input type="number" name="Cous Cous" id="Cous Cous" value="2">
+                </div>                 
             </div>
             
-            <div class="col s12 m4 l3">
-                <img src="Protein/Salmon.png" height="200px" width="200px" alt="">
+            <div class="col s12 m4 l3 tc item-height">
+                <img src="Protein/Salmon.png" alt="img-salmon">
                 <p class="f3 tc">Fish</p>
-                
+                <p>Brand name:PC Organics</p>               
                 <form method = "POST"  action=""></form>
-                <label for="name">Brand name:Salmon</label>
-                <input type="number" name="Fish" id="Fish" value="2">
+                <div class="col s2 m3 l2">
+                    <label for="name">Quantity</label>
+                    <input type="number" name="Fish" id="Fish" value="2">
+                </div>   
             </div>            
 
-            <div class="col s12 m4 l3">
-                <img src="Protein/Beef.png" height="200px" width="200px" alt="">
-                <p class="f3 tc">Beef</p>
-                
+            <div class="col s12 m4 l3 tc item-height">
+                <img src="Protein/Beef.png" alt="beef-img">
+                <p class="f3 mt3">Beef</p>
+                <p>Brand name:PC Organics</p>               
                 <form method = "POST"  action=""></form>
-                <label for="name">Beef</label>
-                <input type="number" name="Beef" id="Beef" value="2">                
+                <div class="col s2 m3 l2">
+                    <label for="name">Quantity</label>
+                    <input type="number" name="Beef" id="Beef" value="2">
+                </div>                
             </div>
 
-            <div class="col s12 m4 l3">
-                <img src="Protein/Mackerel.png" height="200px" width="200px" alt="">
-                <p class="f3 tc">Mackerel</p>
-                
+            <div class="col s12 m4 l3 tc item-height">
+                <img src="Protein/Mackerel.png" alt="mackerel-img">
+                <p class="f3 mt3">Mackerel</p>
+                <p>Brand name:PC Organics</p>                
                 <form method = "POST"  action=""></form>
-                <label for="name">Mackerel</label>
-                <input type="number" name="Mackerel" id="Mackerel" value="2">
+                <div class="col s2 m3 l2">
+                    <label for="name">Quantity</label>
+                    <input type="number" name="Mackerel" id="Mackerel" value="2">
+                </div>                
+        </div>
+
+            <div class="col s12 m4 l3 tc item-height">
+                <img src="Protein/Chicken.png"  alt="chicken-img">
+                <p class="f3 mt3">Chicken</p>
+                <p>Brand name:PC Organics</p>               
+                <form method = "POST"  action=""></form>
+                <div class="col s2 m3 l2">
+                    <label for="name">Quantity</label>
+                    <input type="number" name="Chicken" id="Chicken" value="2">
+                </div>                 
             </div>
 
-            <div class="col s12 m4 l3">
-                <img src="Protein/Chicken.png" height="200px" width="200px" alt="">
-                <p class="f3 tc">Chicken</p>
-               
+            <div class="col s12 m4 l3 tc item-height">
+                <img src="Fresh-produce/Tomatoes 2.png" alt="tomatoes-img">
+                <p class="f3 mt3">Tomatoes</p>
+                <p>Brand name:PC Organics</p>                
                 <form method = "POST"  action=""></form>
-                <label for="name">Brand name:PC Organics</label>
-                <input type="number" name="Mackerel" id="Mackerel" value="2">
-            </div>
-
-            <div class="col s12 m4 l3">
-                <img src="Fresh-produce/Tomatoes 2.png" height="200px" width="200px" alt="">
-                <p class="f3 tc">Tomatoes</p>
+                <div class="col s2 m3 l2">
+                    <label for="name">Quantity</label>
+                    <input type="number" name="Tomatoes" id="Tomatoes" value="2">
+                </div>                
                 
-                <form method = "POST"  action=""></form>
-                <label for="name">Tomatoes</label>
-                <input type="number" name="Tomatoes" id="Tomatoes" value="2">
             </div>
             
-            <div class="col s12 m4 l3">
-                <img src="Fresh-produce/Onion.png" height="200px" width="200px" alt="">
-                <p class="f3 tc">Onion</p>
-               
+            <div class="col s12 m4 l3 tc item-height">
+                <img src="Fresh-produce/Onion.png" alt="onion-img">
+                <p class="f3 mt3">Onion</p>
+                <p>Brand name:No name</p>              
                 <form method = "POST"  action=""></form>
-                <label for="name">Onion</label>
-                <input type="number" name="Onion" id="Onion" value="2">
+                <div class="col s2 m3 l2">
+                    <label for="name">Quantity</label>
+                    <input type="number" name="Onion" id="Onion" value="2">
+                </div>
             </div>
 
-            <div class="col s12 m4 l3">
-                <img src="Fresh-produce/Potatoes.png" height="200px" width="200px" alt="">
-                <p class="f3 tc">Potatoes</p>
-                
+            <div class="col s12 m4 l3 tc item-height">
+                <img src="Fresh-produce/Potatoes.png" alt="potato-img">
+                <p class="f3 mt3">Potatoes</p>
+                <p>Brand name:Farmers market</p>
                 <form method = "POST"  action=""></form>
-                <label for="name">Brand name:PC Organics</label>
-                <input type="number" name="Potatoes" id="Potatoes" value="2">
+                <div class="col s2 m3 l2">
+                    <label for="name">Quantity</label>
+                    <input type="number" name="Potatoes" id="Potatoes" value="2">
+                </div>            
             </div>
 
-            <div class="col s12 m4 l3">
-                <img src="Toiletries/Bath Bar soap.png" height="200px" width="200px" alt="">
-                <p class="f3 tc">Bath Soap</p>
-                
+            <div class="col s12 m4 l3 tc item-height">
+                <img src="Toiletries/Bath Bar soap.png" alt="soap-img">
+                <p class="f3 mt3">Bath Soap</p>
+                <p>Brand name:Olay</p>               
                 <form method = "POST"  action=""></form>
-                <label for="name">Brand name:Olay</label>
-                <input type="number" name="Toiletries" id="Bath Bar" value="2">
+                <div class="col s2 m3 l2">
+                    <label for="name">Quantity</label>
+                    <input type="number" name="Toiletries" id="Bath Bar" value="2">
+                </div> 
             </div>
 
-            <div class="col s12 m4 l3">
-                <img src="Toiletries/Tooth paste.png" height="200px" width="200px" alt="">
-                <p class="f3 tc">Toothpaste</p>
+            <div class="col s12 m4 l3 tc item-height">
+                <img src="Toiletries/Tooth paste.png"  alt="toothpaste-img">
+                <p class="f3 mt3">Toothpaste</p>
+                <p>Brand name:Colgate</p>
                 <form method = "POST"  action=""></form>
-                <label for="name">Brand name:Colgate</label>
-                <input type="number" name="Toiletries" id="Colgate" value="2">
+                <div class="col s2 m3 l2">
+                    <label for="name">Quantity</label>
+                    <input type="number" name="Toiletries" id="Colgate" value="2">
+                </div>               
             </div>
 
-            <div class="container-fluid">
-                <div class="row">
+            <div class="">
+                <div class="row footer-links">
                     <div class="col s12">
                         <footer class="grey darken-3">
                             <h1>Contact us</h1>
+                            <a class="link dim white-50 dim">Email:kitchen.organizer.com</a>
                             <div class="footer-copyright">
                                 <div class="container">
-                                © 2021 Copyright Text
-                                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+                                <p class="footer center mt5">© Hafsat Halilu</p>
+                                
+
                                 </div>
                               </div>
                             </footer>
@@ -253,16 +251,5 @@
             </div>
         </div>
     </div>
-
-
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <script>
-      document.addEventListener('DOMContentLoaded', function() {
-          var elems = document.querySelectorAll('.sidenav');
-          M.Sidenav.init(elems);
-      });
-  </script>
 </body>
 </html>
